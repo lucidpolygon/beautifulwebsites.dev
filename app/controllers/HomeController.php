@@ -11,6 +11,11 @@ class HomeController
         
         // Load data from data.json file
         $data = json_decode(file_get_contents(__DIR__ . '/../data/data.json'), true);
+        
+        // Sort data based on 'created_at' field in descending order
+        usort($data, function ($a, $b) {
+            return strtotime($b['created_at']) - strtotime($a['created_at']);
+        });
 
         // Filter data to include only items with id > 1
         $data = array_filter($data, function ($item) {

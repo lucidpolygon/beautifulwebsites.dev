@@ -6,3 +6,29 @@
     
     <title><?php echo $title; ?></title>
     <meta name="description" content="<?php echo $desc; ?>">
+    
+    <link rel="canonical" href="<?php echo $url; ?>">
+
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="<?php echo $title; ?>">
+    <meta property="og:description" content="<?php echo $desc; ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo $url; ?>">
+    <meta property="og:image" content="<?php echo !empty($img) ? $img : ''; ?>">
+    
+    <!-- Twitter Tags -->
+    <meta name="twitter:title" content="<?php echo $title; ?>">
+    <meta name="twitter:description" content="<?php echo $desc; ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="<?php echo !empty($img) ? $img : ''; ?>">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JH375TJ5S"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2JH375TJ5S');
+    </script>

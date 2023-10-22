@@ -43,12 +43,16 @@ class SubscribeController
         ];
         file_put_contents($subscribersFile, json_encode($subscribers));
 
+        // Get MailTo value from Config file
+        $configFile = __DIR__ . '/../config.php';
+        require_once($configFile);
+        $mailTo = MAIL_TO;
         
         // Prepare the email message
-        $to = 'test@test.com';
+        $to = $mailTo;
         $subject = 'Beautiful Website Newsletter Subscription';
         $message = "ID: $id\nEmail: $email\nCreated At: $createdAt\nIP Address: $ipAddress";
-        $headers = "From: test@test.com";
+        $headers = "From: $mailTo";
 
         // Send the email using mail()
         mail($to, $subject, $message, $headers);

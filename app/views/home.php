@@ -1,6 +1,9 @@
 <?php
-$desc = "Discover a stunning collection of beautiful websites in our web design inspiration gallery. Get inspired by innovative designs, creative layouts, and cutting-edge features that push the boundaries of web design. Explore our curated selection of beautiful websites and find the inspiration you need to create your own masterpiece.";
+// $desc = "Discover a stunning collection of beautiful websites in our web design inspiration gallery. Get inspired by innovative designs, creative layouts, and cutting-edge features that push the boundaries of web design. Explore our curated selection of beautiful websites and find the inspiration you need to create your own masterpiece.";
+$desc = "Our gallery of beautiful websites features innovative designs, creative layouts, and cutting-edge features. Explore our curated selection and find the inspiration you need to create your own masterpiece.";
 $title = "Web Design Inspiration Gallery: Beautiful Websites";
+$img = "https://beautifulwebsites.dev/assets/imgs/og-image.png";
+$url = "https://beautifulwebsites.dev";
 ?>
 
 <!DOCTYPE html>
@@ -17,14 +20,12 @@ $title = "Web Design Inspiration Gallery: Beautiful Websites";
 
   <?php include __DIR__ . '/includes/navigation.php'; ?>
 
-  <main class="px-2">
+  <main class="px-2 mt-32 md:mt-20">
 
     <!-- Main Heading -->
     <section class="mx-4 my-10 md:container md:mx-auto px-2 py-5 md:p-10 rounded-lg border-2 md:border-0 border-gray-900 text-center">
       <h1 class="font-extrabold text-3xl md:text-5xl">Beautiful Websites: Web Design Inspiration Gallery</h1>
-      <p class="mt-5 text-gray-600">Discover a stunning collection of beautiful websites in our web design inspiration
-        gallery. Get inspired by innovative designs, creative layouts, and cutting-edge features that push the
-        boundaries of web design.</p>
+      <p class="mt-5 text-gray-600">Check out our web design inspiration gallery. We've handpicked a bunch of awesome websites for you. You'll be amazed by their cool designs, creative layouts, and the latest web design trends.</p>
     </section>
 
     <section id="content">

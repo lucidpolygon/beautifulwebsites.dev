@@ -9,6 +9,6 @@
                   <span class="min-w-fit w-3 h-3 bg-yellow-400 block rounded-full"></span>
                 </div>
               </div>
-              <img src="assets/imgs/<?php echo $item['img_folder']; ?>/<?php echo $item['img_cover']; ?>" alt="Screenshot of <?php echo $item['title']; ?> website" class="w-full">
+              <img src="assets/imgs/<?php echo $item['img_folder']; ?>/<?php echo $item['img_cover']; ?>" alt="Screenshot of <?php echo $item['title']; ?> website" class="w-full h-auto object-contain">
             </div>
           </a>

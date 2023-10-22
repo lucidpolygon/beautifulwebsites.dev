@@ -2,6 +2,7 @@
 $desc = "View stunning screenshots of " . $item['title'] . " in our web design inspiration gallery. Explore the innovative designs, creative layouts, and cutting-edge features that make this website stand out. Get inspired and discover new web design ideas for your next project";
 $title = $item['title'] . " | Web Design Inspiration";
 $img = 'https://beautifulwebsites.dev/assets/imgs/' . $item['img_folder'] . '/' . $item['img_cover'];
+$url = 'https://beautifulwebsites.dev/websites/'.$item['slug'];
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +19,9 @@ $img = 'https://beautifulwebsites.dev/assets/imgs/' . $item['img_folder'] . '/' 
 
 
 
-    <section class="py-10 px-4 md:mx-24">
+    <section class="py-10 px-4 md:mx-24 my-32">
 
-        <h1 class="text-5xl font-bold text-gray-900 mb-5 tracking-tight leading-tight"><?php echo $item['title']; ?> | Website Design Inspiration</h1>
+        <h1 class="text-5xl font-light text-gray-900 mb-5 tracking-tight leading-tight"><?php echo $item['title']; ?> Website</h1>
 
         <div class="flex items-center mb-5">
             <?php foreach ($item["stack"] as $stack) : ?>

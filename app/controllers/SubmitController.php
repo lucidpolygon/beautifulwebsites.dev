@@ -54,8 +54,13 @@ class SubmitController
         ];
         file_put_contents($submissionsFile, json_encode($submissions));
 
+        // Get MailTo value from Config file
+        $configFile = __DIR__ . '/../config.php';
+        require_once($configFile);
+        $mailTo = MAIL_TO;
+
         // Prepare the email message
-        $to = 'test@test,com';
+        $to = $mailTo;
         $subject = 'New website submission';
         $message = "Name: $name\nEmail: $email\nURL: $url";
         $headers = "From: $email";
