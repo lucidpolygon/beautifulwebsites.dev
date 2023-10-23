@@ -17,6 +17,10 @@ $routes = [
     '/subscribe' => [
         'GET' => null,
         'POST' => 'SubscribeController@subscribe'
+    ],
+    '/webpage-sherlock-chrome-extension' => [
+        'GET' => 'PageController@show',
+        'POST' => null
     ]
 ];
 
