@@ -23,13 +23,31 @@ $url = "https://beautifulwebsites.dev";
     <main class="px-2">
 
         <article class="prose prose-slate mx-auto my-32">
-            <h1 class="text-center">Webpage Sherlock: Your Ultimate Webpage Analysis Companion</h1>
+            <h1 class="text-center">Webpage Sherlock: Page insights in a single click</h1>
 
             <p>
                 The idea is to make website analysis a breeze, without the need to inspect the page, run complex tools, or visit a website to check rich previews. Simply press a keyboard shortcut and obtain a snapshot of the webpage you're on. And that's precisely what I've built.
             </p>
 
-            <h2 class="font-medium text-2xl text-center p-5 mt-0 border rounded-xl bg-black text-white">Install the Extension. <br class="mt-3" /> Click on the extension icon or press CMD / CTRL + B. <br class="mt-3" /> Watch your page's analysis in a popup. 🎉 </h2>
+            <div class="md:flex justify-center items-center">
+                <div class="flex justify-center">
+                    <a href="https://www.producthunt.com/posts/webpage-sherlock-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-webpage&#0045;sherlock&#0045;2" target="_blank">
+                        <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=421618&theme=light" alt="Webpage&#0032;Sherlock - Page&#0032;insights&#0032;in&#0032;a&#0032;single&#0032;click | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+                    </a>
+                </div>
+                <div class="px-5 text-center">
+                    <p class="font-bold border rounded-xl px-5 ">Launching on <br /> Friday 27th October 2023</p>
+                </div>
+
+            </div>
+            <div class="flex justify-center">
+            </div>
+
+            <div class="flex justify-center">
+                <img src="<?php echo $img; ?>" alt="Webpage Sherlock OG Image" />
+            </div>
+
+            <h2 class="hidden font-medium text-2xl text-center p-5 mt-0 border rounded-xl bg-black text-white">Install the Extension. <br class="mt-3" /> Click on the extension icon or press CMD / CTRL + B. <br class="mt-3" /> Watch your page's analysis in a popup. 🎉 </h2>
 
 
             <h2>Why Webpage Sherlock?</h2>
@@ -43,10 +61,11 @@ $url = "https://beautifulwebsites.dev";
                     <img src="https://beautifulwebsites.dev/assets/imgs/website-sherlock/meta-information.png" class="border rounded-2xl p-5" alt="Website Sherlock Meta Information Screenshot" />
                     <p>The extension will grab all the meta info from your page and let you know if something's missing or not quite right. These are the meta tags I've got covered.</p>
                     <ol>
-                        <li><strong>Title</strong> 
-                        <ul>
-                            <li><a href="https://developers.google.com/search/docs/appearance/title-link" target="_blank">Google guidelines on title</a></li>
-                        </ul></li>
+                        <li><strong>Title</strong>
+                            <ul>
+                                <li><a href="https://developers.google.com/search/docs/appearance/title-link" target="_blank">Google guidelines on title</a></li>
+                            </ul>
+                        </li>
                         <li><strong>Meta Title</strong></li>
                         <li><strong>Meta Description</strong></li>
                         <li><strong>OG Title</strong></li>
@@ -82,7 +101,7 @@ $url = "https://beautifulwebsites.dev";
                 <li>
                     <h3>Images</h3>
                     <img src="https://beautifulwebsites.dev/assets/imgs/website-sherlock/images.png" class="border rounded-2xl p-5" alt="Website Sherlock Images Screenshot" />
-                    <p>When it comes to images, the extension primarily checks for those without alt tags. It provides you with the total number of images and the count of images that lack alt tags.</p> 
+                    <p>When it comes to images, the extension primarily checks for those without alt tags. It provides you with the total number of images and the count of images that lack alt tags.</p>
                     <p>Additionally, it shows you the images without alt tags, making it easy for you to go ahead and fix them. It considers both simple image tags with single src and those with srcsets as well.</p>
                     <p>Just like with favicons, be on the lookout for broken image links. The extension is a handy tool for spotting these issues and getting them fixed.</p>
                     <p>Here's <a href="https://developers.google.com/search/docs/appearance/google-images" target="_blank">Google's guide</a> on how to get the most out of your images.</p>
@@ -110,7 +129,7 @@ $url = "https://beautifulwebsites.dev";
                     <h2>Social Preview</h2>
                     <img src="https://beautifulwebsites.dev/assets/imgs/website-sherlock/social-preview.png" class="border rounded-2xl p-5" alt="Website Sherlock Social Preview Screenshot" />
                     <p>
-                    The last stop is the Schema Preview. Here, our extension gives you a sneak peek at how your website looks on Google, Facebook, Twitter, and LinkedIn. It's the same deal for other social sites like Instagram and WhatsApp.</p>
+                        The last stop is the Schema Preview. Here, our extension gives you a sneak peek at how your website looks on Google, Facebook, Twitter, and LinkedIn. It's the same deal for other social sites like Instagram and WhatsApp.</p>
                     <p>You can switch between options to check out how your site is shown. If the images or social data are missing or messed up, it's probably got something to do with those OG tags and Twitter Tags we talked about in the meta information section.</p>
                     <p>Here's <a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started" target="_blank">Twitter's guide</a> on cards.</p>
                     <p>Here's <a href="https://ogp.me/" target="_blank">Open Graph guide</a> on OG Tags.</p>
