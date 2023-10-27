@@ -17,7 +17,6 @@ $url = "https://beautifulwebsites.dev";
 </head>
 
 <body>
-
   <?php include __DIR__ . '/includes/navigation.php'; ?>
 
   <main class="px-2 mt-32 md:mt-20">

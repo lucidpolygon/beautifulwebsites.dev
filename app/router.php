@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/controllers/PageController.php';
+
 // Define a routing table with the mapping of URLs to controller methods and HTTP request methods
 $routes = [
     '/' => [
@@ -19,9 +21,13 @@ $routes = [
         'POST' => 'SubscribeController@subscribe'
     ],
     '/webpage-sherlock-chrome-extension' => [
-        'GET' => 'PageController@show',
+        'GET' => function () {
+            $controller = new PageController();
+            $controller->show('webpage-sherlock-chrome-extension');
+        },
         'POST' => null
-    ]
+    ],
+
 ];
 
 // Get the current URL from the server request
@@ -46,11 +52,16 @@ foreach ($routes as $routeUrl => $routeActions) {
     $routeUrl = preg_replace('/\{[a-zA-Z]+\}/', '([^\/]+)', $routeUrl);
     if (preg_match('/^' . $routeUrl . '$/', $relativeUrl, $matches)) {
         if (isset($routeActions[$requestMethod])) {
-            $matchedRoute = [
-                'url' => $routeUrl,
-                'action' => $routeActions[$requestMethod],
-                'params' => array_slice($matches, 1)
-            ];
+            $action = $routeActions[$requestMethod];
+            if (is_callable($action)) {
+                $action();
+            } else {
+                $matchedRoute = [
+                    'url' => $routeUrl,
+                    'action' => $action,
+                    'params' => array_slice($matches, 1)
+                ];
+            }
             break;
         } else {
             // No matching route for the HTTP request method found, show a 405 error page

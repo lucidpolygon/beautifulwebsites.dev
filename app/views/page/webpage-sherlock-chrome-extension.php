@@ -26,8 +26,8 @@ $url = "https://beautifulwebsites.dev";
 
         <section>
             <div class="py-8 px-4 text-center lg:py-16 lg:px-12">
-                <a href="https://www.producthunt.com/products/webpage-sherlock" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200" role="alert" target="_blank">
-                    <span class="text-xs bg-black rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Launching on Product Hunt on Friday, 27th October 2023</span>
+                <a href="https://chrome.google.com/webstore/detail/webpage-sherlock-page-ins/fgcokeipnkbcjndbhcmdcjpigplhfkbk" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200" role="alert" target="_blank">
+                    <span class="text-xs bg-black rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Now Available in Chrome Webstore</span>
                     <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                     </svg>
@@ -35,13 +35,13 @@ $url = "https://beautifulwebsites.dev";
                 <h1 class="mb-4 text-4xl tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">Webpage Sherlock: Page insights in a single click</h1>
                 <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48">The idea is to make website analysis a breeze, without the need to inspect the page, run complex tools, or visit a website to check rich previews. Simply press a keyboard shortcut and obtain a snapshot of the webpage you're on. And that's precisely what I've built.</p>
                 <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                    <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-black hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 hidden">
+                    <a href="https://chrome.google.com/webstore/detail/webpage-sherlock-page-ins/fgcokeipnkbcjndbhcmdcjpigplhfkbk" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-black hover:bg-gray-800 focus:ring-4 focus:ring-gray-300" target="_blank">
                         Get Chrome Extension
                         <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
-                    <a href="https://www.producthunt.com/products/webpage-sherlock?utm_source=badge-follow&utm_medium=badge&utm_souce=badge-webpage&#0045;sherlock" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=555518&theme=light" alt="Webpage&#0032;Sherlock - Page&#0032;Insights&#0032;in&#0032;a&#0032;Single&#0032;Click | Product Hunt" class="w-full" /></a>
+                    <a href="https://www.producthunt.com/posts/webpage-sherlock-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-webpage&#0045;sherlock&#0045;2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=421618&theme=light" alt="Webpage&#0032;Sherlock - Page&#0032;insights&#0032;in&#0032;a&#0032;single&#0032;click | Product Hunt" class="w-full" /></a>
                 </div>
             </div>
         </section>
@@ -57,7 +57,7 @@ $url = "https://beautifulwebsites.dev";
             <h2 class="mb-8 mt-16 text-4xl tracking-tight text-gray-900">Analysis from the Extension</h2>
             </div>
         </section>
-
+        
         <section>
             <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
                 <img src="https://beautifulwebsites.dev/assets/imgs/website-sherlock/meta-information.png" class="border border-black rounded-2xl w-full" alt="Website Sherlock Meta Information Screenshot" />

@@ -11,7 +11,10 @@ node_modules
 public_html/assets/imgs/
 
 # Ignore common files and folders
-.DS_Store
+**/*.DS_Store**
 
 # Ignore sitemap
 public_html/sitemap.xml
+
+# Ignore notes file
+notes.md

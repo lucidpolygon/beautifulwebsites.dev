@@ -29,6 +29,10 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+        
+    <?php 
+    require_once(dirname(dirname(__DIR__))."/config.php");
+    if( ENV == "ENV" ){ echo( "gtag('config', '".GA4_TAG."')" ); }
+    ?>
 
-    gtag('config', 'G-2JH375TJ5S');
     </script>
