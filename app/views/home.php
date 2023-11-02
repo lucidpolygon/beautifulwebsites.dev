@@ -1,5 +1,4 @@
 <?php
-// $desc = "Discover a stunning collection of beautiful websites in our web design inspiration gallery. Get inspired by innovative designs, creative layouts, and cutting-edge features that push the boundaries of web design. Explore our curated selection of beautiful websites and find the inspiration you need to create your own masterpiece.";
 $desc = "Our gallery of beautiful websites features innovative designs, creative layouts, and cutting-edge features. Explore our curated selection and find the inspiration you need to create your own masterpiece.";
 $title = "Web Design Inspiration Gallery: Beautiful Websites";
 $img = "https://beautifulwebsites.dev/assets/imgs/og-image.png";
@@ -16,16 +15,17 @@ $url = "https://beautifulwebsites.dev";
 
 </head>
 
-<body>
+<body class="bg-black">
   <?php include __DIR__ . '/includes/navigation.php'; ?>
 
   <main class="px-2 mt-32 md:mt-20">
 
     <!-- Main Heading -->
-    <section class="mx-4 my-10 md:container md:mx-auto px-2 py-5 md:p-10 rounded-lg border-2 md:border-0 border-gray-900 text-center">
-      <h1 class="font-extrabold text-3xl md:text-5xl">Beautiful Websites: Web Design Inspiration Gallery</h1>
-      <p class="mt-5 text-gray-600">Check out our web design inspiration gallery. We've handpicked a bunch of awesome websites for you. You'll be amazed by their cool designs, creative layouts, and the latest web design trends.</p>
+    <section class="md:container mx-4 my-10 md:mx-auto px-2 py-5 md:p-10 md:mt-28 border-2 border-gray-900 md:text-center">
+      <h1 class="font-bold text-3xl md:text-5xl text-[#69CF95]">A list of <span class="text-[#FFd700]">beautiful websites</span> on the internet</h1>
+      <p class="font-light mt-5 md:text-2xl text-gray-300">This is a handpicked collection of the most visually stunning and creatively designed websites from across the internet. You want inspiration? cool designs, creative layouts, and the latest web design trends, you'll find it all here.</p>
     </section>
+
 
     <section id="content">
       <?php
@@ -63,16 +63,16 @@ $url = "https://beautifulwebsites.dev";
       echo '<div class="mx-4 mt-10 text-center flex space-x-4 justify-center">';
       // Output the previous page button for all pages except the first one
       if ($page > 1) {
-        echo '<a href="?page=' . ($page - 1) . '" class="outline hover:bg-gray-100 font-bold py-2 px-4 rounded-lg">Previous</a>';
+        echo '<a href="?page=' . ($page - 1) . '" class="outline bg-gray-100 hover:bg-[#FFd700] font-bold py-2 px-4">Previous</a>';
       }
 
       // Output the next page button for all pages except the last one
       if ($page < ceil(count($data) / $items_per_page)) {
-        echo '<a href="?page=' . ($page + 1) . '" class="outline hover:bg-gray-100 font-bold py-2 px-4 rounded-lg">Load More</a>';
+        echo '<a href="?page=' . ($page + 1) . '" class="outline bg-gray-100 hover:bg-[#FFd700] font-bold py-2 px-4">Next</a>';
       }
       echo '</div>';
 
-      echo '<div class="mx-4 mt-5 mb-10 text-gray-500 text-center">';
+      echo '<div class="mx-4 mt-5 mb-10 text-gray-300 text-center">';
       $total_pages = ceil(count($data) / $items_per_page);
       echo 'Page ' . $page . ' of ' . $total_pages;
       echo '</div>';

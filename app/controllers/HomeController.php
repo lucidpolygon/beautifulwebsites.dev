@@ -29,13 +29,13 @@ class HomeController
     public function show($slug)
     {
         // Load data from data.json file
-        $data = json_decode(file_get_contents(__DIR__ . '/../data/data.json'), true);
+        $websites = json_decode(file_get_contents(__DIR__ . '/../data/data.json'), true);
 
         // Find the item with the matching slug
         $item = null;
-        foreach ($data as $d) {
-            if ($d['slug'] == $slug) {
-                $item = $d;
+        foreach ($websites as $website) {
+            if ($website['slug'] == $slug) {
+                $item = $website;
                 break;
             }
         }
@@ -47,7 +47,12 @@ class HomeController
         }
 
         // Load the show view template and pass in the item data
-        require_once __DIR__ . '/../views/show.php';
+        if (isset($website['new'])) {
+            require_once __DIR__ . '/../views/show2.php';
+        }else{
+            require_once __DIR__ . '/../views/show.php';
+        }
+        
     }
 
 }

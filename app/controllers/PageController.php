@@ -1,25 +1,23 @@
 <?php
 
-class PageController {
-
-    public function show2()
-    {
-        // Load the show view template and pass in the item data
-        require_once __DIR__ . '/../views/page/show.php';
-    }
+class PageController
+{
 
     public function show($route)
     {
+
         // Construct the path to the view file based on the route
         $viewFile = __DIR__ . "/../views/page/{$route}.php";
-    
+
         if (file_exists($viewFile)) {
             // Load the view template if it exists
             require_once $viewFile;
+            exit();
         } else {
-            // Handle the case when the view file doesn't exist, e.g., display an error message or redirect to a default page.
-            echo "View not found for route: $route";
+            // No matching route found, show a 404 error page
+            header('HTTP/1.1 404 Not Found');
+            require_once __DIR__ . '/views/404.php';
+            exit();
         }
     }
-    
 }

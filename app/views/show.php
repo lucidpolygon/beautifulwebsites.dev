@@ -9,33 +9,32 @@ $url = 'https://beautifulwebsites.dev/websites/'.$item['slug'];
 <html lang="en">
 
 <head>
-    <?php include __DIR__ . '/includes/meta-tags.php'; ?>
-    <?php include __DIR__ . '/includes/favicon.php'; ?>
+  <?php include __DIR__ . '/includes/meta-tags.php'; ?>
+
+  <?php include __DIR__ . '/includes/favicon.php'; ?>
+
 </head>
 
-<body>
-
-    <?php include __DIR__ . '/includes/navigation.php'; ?>
-
-
+<body class="bg-black">
+  <?php include __DIR__ . '/includes/navigation.php'; ?>
 
     <section class="py-10 px-4 md:mx-24 my-32">
 
-        <h1 class="text-5xl font-light text-gray-900 mb-5 tracking-tight leading-tight"><?php echo $item['title']; ?> Website</h1>
+        <h1 class="font-bold text-3xl md:text-5xl text-[#69CF95] tracking-tight leading-tight mb-5"><?php echo $item['title']; ?> Website</h1>
 
         <div class="flex items-center mb-5">
             <?php foreach ($item["stack"] as $stack) : ?>
-                <span class="px-2 py-1 rounded-full bg-gray-200 text-gray-800 text-sm font-medium mr-2 mb-2">
+                <span class="px-2 py-1 border border-gray-700 text-white hover:bg-[#FFd700] hover:text-black text-sm font-medium mr-2 mb-2">
                     <?php echo $stack; ?>
                 </span>
             <?php endforeach ?>
-            <span class="px-2 py-1 rounded-full bg-green-200 text-gray-800 text-sm font-medium mr-2 mb-2">
+            <span class="px-2 py-1 border border-gray-700 text-white text-sm font-medium mr-2 mb-2">
                 <?php echo $item['category']; ?>
             </span>
         </div>
 
         <?php if ($item['description'] != null) { ?>
-            <p class="font-extralight text-4xl mb-10 border rounded-lg p-3"><?php echo $item['description']; ?></p>
+            <p class="font-light mt-5 md:text-2xl text-gray-300 mb-10 border border-gray-900 p-3"><?php echo $item['description']; ?></p>
         <?php } ?>
 
         <?php if ($item['content'] != null) { ?>

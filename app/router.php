@@ -33,6 +33,7 @@ $routes = [
 // Get the current URL from the server request
 $requestUrl = $_SERVER['REQUEST_URI'];
 
+
 // Remove the query string from the URL if present
 if (($pos = strpos($requestUrl, '?')) !== false) {
     $requestUrl = substr($requestUrl, 0, $pos);
@@ -71,6 +72,7 @@ foreach ($routes as $routeUrl => $routeActions) {
         }
     }
 }
+
 
 // Dispatch the matched route to the appropriate controller method
 if ($matchedRoute) {
