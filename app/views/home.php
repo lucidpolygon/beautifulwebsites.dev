@@ -63,12 +63,12 @@ $url = "https://beautifulwebsites.dev";
       echo '<div class="mx-4 mt-10 text-center flex space-x-4 justify-center">';
       // Output the previous page button for all pages except the first one
       if ($page > 1) {
-        echo '<a href="?page=' . ($page - 1) . '" class="outline bg-gray-100 hover:bg-[#FFd700] font-bold py-2 px-4">Previous</a>';
+        echo '<a href="?page=' . ($page - 1) . '"class="outline outline-white text-white hover:bg-[#FFd700] hover:text-black py-2 px-4">Previous</a>';
       }
 
       // Output the next page button for all pages except the last one
       if ($page < ceil(count($data) / $items_per_page)) {
-        echo '<a href="?page=' . ($page + 1) . '" class="outline bg-gray-100 hover:bg-[#FFd700] font-bold py-2 px-4">Next</a>';
+        echo '<a href="?page=' . ($page + 1) . '" class="outline outline-white text-white hover:bg-[#FFd700] hover:text-black py-2 px-4">Next</a>';
       }
       echo '</div>';
 
