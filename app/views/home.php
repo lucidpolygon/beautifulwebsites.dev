@@ -26,6 +26,7 @@ $url = "https://beautifulwebsites.dev";
       <p class="font-light mt-5 md:text-2xl text-gray-300">This is a handpicked collection of the most visually stunning and creatively designed websites from across the internet. You want inspiration? cool designs, creative layouts, and the latest web design trends, you'll find it all here.</p>
     </section>
 
+      
 
     <section id="content">
       <?php

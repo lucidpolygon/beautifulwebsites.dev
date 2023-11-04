@@ -20,7 +20,7 @@ $url = "https://beautifulwebsites.dev";
 
     <?php include __DIR__ . '/../includes/navigation.php'; ?>
 
-    <div class="bg-gray-50">
+    <div>
 
     <main class="px-2 my-16 max-w-screen-xl mx-auto">
 
