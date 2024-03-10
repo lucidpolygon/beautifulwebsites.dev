@@ -5,7 +5,7 @@ $og_image_url = "assets/imgs/websites/laravel-saas-boilerplates-desktop.webp";
 ?>
 
 
-<article class="prose mx-auto my-8">
+    <article class="prose mx-auto my-8 px-2">
         <header>
             <h1>Top Laravel SaaS Boilerplates for 2024</h1>
         </header>
