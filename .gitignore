@@ -1,20 +1,10 @@
-# Ignore the app/data folder
-app/data/
-
-# Ignore the config file
-app/config.php
-
-# Ignore Node Modules
-node_modules
-
-# Ignore the imgs/ folder in the assets/ folder within the public_html/ folder
-public_html/assets/imgs/
-
 # Ignore common files and folders
 **/*.DS_Store**
 
-# Ignore sitemap
-public_html/sitemap.xml
+# Ignore folders
+data
+assets
+node_modules
 
-# Ignore notes file
+# Ignore files
 notes.md
